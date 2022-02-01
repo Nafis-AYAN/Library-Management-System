@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HompageController">
+   <children>
+      <ImageView fitHeight="406.0" fitWidth="600.0" layoutY="-3.0" opacity="0.25" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Blur%20Library%20Picture.jpg" />
+         </image>
+      </ImageView>
+      <Accordion layoutX="217.0" layoutY="43.0" />
+      <Label layoutX="41.0" layoutY="43.0" prefHeight="18.0" prefWidth="558.0" text="*************** Online Library *****************">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="69.0" layoutY="137.0" text="Choose Login Option:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="lib" layoutX="96.0" layoutY="190.0" mnemonicParsing="false" text="Librarian">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="rb" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="mem" layoutX="97.0" layoutY="228.0" mnemonicParsing="false" text="Member" toggleGroup="$rb">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Button layoutX="178.0" layoutY="308.0" mnemonicParsing="false" onAction="#confirm" text="Confirm" />
+      <Button layoutX="320.0" layoutY="308.0" mnemonicParsing="false" onAction="#close" prefHeight="26.0" prefWidth="59.0" text="Close" />
+   </children>
+</AnchorPane>
